@@ -1,1 +1,1 @@
-# ai_posture_project
+# AI Posture Project
