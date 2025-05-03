@@ -1,16 +1,10 @@
-# AI Posture Project
-
-# 🐢 AI System for Detecting Forward Head Posture (Tech Neck)
+# AI System for Detecting Forward Head Posture (Tech Neck)
 
 📅 December 22, 2024
-
----
 
 ## 🧩 Problem Overview
 
 Modern lifestyles involve excessive screen time, often over 6 hours daily. Poor sitting posture, especially **Forward Head Posture (FHP)**—commonly known as "tech neck"—can lead to serious musculoskeletal issues. However, most individuals are unaware of their poor posture and lack tools to correct it.
-
----
 
 ## 🎯 Project Goal
 
@@ -19,12 +13,12 @@ To develop an **AI-based real-time system** that identifies poor posture using w
 - ✅ Correct Posture  
 - ❌ Incorrect Posture
 
----
 
 ## 🔍 Approach
 
 - **Pose Estimation**: Used **MediaPipe** to extract 33 key body landmarks from input images or webcam frames.
 - **Custom Dataset**: Built a dataset of 136 labeled images (augmented to balance classes), with 80/20 train-validation split.
+  ![Screenshot](results_images/dataset_overview.png)
 - **Model Architecture**:  
   - 3-layer Fully Connected Neural Network (FCNN)  
   - ReLU activation + Dropout (0.5)  
@@ -36,17 +30,15 @@ To develop an **AI-based real-time system** that identifies poor posture using w
   - Epochs: 2000  
   - Final accuracy: **83% on validation set**
 
----
-
 ## 🖥️ Demo
 
 ### Image-based posture detection:
 ![Screenshot](results_images/image_input_ver.png)
 
 ### Real-time webcam system:
+![Screenshot](results_images/webcam_input_ver.png)
 ![Demo GIF](results_images/webcam_test.gif)
 
----
 
 ## 📊 Results
 
@@ -56,7 +48,6 @@ To develop an **AI-based real-time system** that identifies poor posture using w
   - Data augmentation
   - Hyperparameter tuning
 
----
 
 ## 🔗 Resources
 
